@@ -1,0 +1,259 @@
+/*
+Descricao: Projeto Blog do Matheus
+nome_exercicio: Situação de Aprendizagem 01
+nome_aluno: Matheus Henrique Batista Raimundo
+email_aluno: matheus.raimundo3@aluno.cps.sp.gov.br
+turma: WEBI-ISW028-A
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: rgb(15, 78, 36);
+}
+
+header h1 {
+  margin: 0;
+  color: rgb(247, 247, 247);
+}
+
+nav {
+  border: 0px solid;
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+main {
+  background-color: rgb(223, 223, 223);
+  min-height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+footer {
+  background-color: rgb(79, 113, 79);
+  margin-bottom: 40px;
+  margin-top: 40px;
+  min-height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  color: #fbfcfd;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #fbfcfd;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #24d453;
+}
+
+article {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+aside {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 30px;
+  border-left: 5px solid #2d5a3f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+aside h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #2d5a3f;
+  font-size: 1.3rem;
+}
+
+aside p {
+  margin: 0;
+  color: #444444;
+  line-height: 1.5;
+}
+
+section h2 {
+  color: #2d5a3f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 5px solid #2d5a3f;
+  border-bottom: none;
+}
+
+article header {
+  background-color: #2d5a3f;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article header h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+article header p {
+  color: #ffffff;
+  margin: 0;
+}
+
+article header strong {
+  color: #ffffff;
+}
+
+article p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #333333;
+}
+
+article h3 {
+  color: #2d5a3f;
+  font-size: 1.25rem;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+article ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+article li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+article img,
+.post-card img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+figure.imagem-destaque {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figure.imagem-destaque img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-size: 0.875rem;
+  color: #666666;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 500px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  font-weight: bold;
+  color: #2d5a3f;
+  margin-bottom: 6px;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #333333;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2d5a3f;
+}
+
+form button {
+  align-self: flex-start;
+  padding: 12px 28px;
+  background-color: #2d5a3f;
+  color: #fbfcfd;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+form button:hover {
+  background-color: #24d453;
+  color: #0f4e24;
+}
