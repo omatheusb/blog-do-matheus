@@ -1,0 +1,170 @@
+:root {
+    --fundo: #12895b;
+    --card: #ececec;
+    --texto: #000000;
+    --texto-suave: #202224;
+    --borda: #c5d0d8;
+    --destaque: #634946;
+    --destaque-escuro: #0b0b0b;
+    --erro: #5d3634;
+    --ok: #1b7a3d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    padding: 36px 32px;
+    background: var(--card);
+    border-radius: 40px;
+    box-shadow: 0 8px 30px rgba(20, 33, 43, 0.12);
+}
+
+h1 {
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.subtitulo {
+    margin: 0 0 28px;
+    color: var(--texto-suave);
+    font-size: 15px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--borda);
+    border-radius: 1000px;
+    font-size: 16px;
+    color: var(--texto);
+    background: #fff;
+}
+
+input:focus {
+    outline: 3px solid rgba(15, 110, 110, 0.25);
+    border-color: var(--destaque);
+}
+
+input.invalido {
+    border-color: var(--erro);
+}
+
+.erro {
+    display: block;
+    min-height: 18px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: var(--erro);
+}
+
+.senha-wrap {
+    position: relative;
+}
+
+.senha-wrap input {
+    padding-right: 84px;
+}
+
+.ver {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--destaque);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ver:hover {
+    background: #e3f0f0;
+}
+
+.esqueci {
+    margin: -6px 0 22px;
+    text-align: right;
+    font-size: 14px;
+}
+
+a {
+    color: var(--destaque);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.entrar {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: var(--destaque);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.entrar:hover {
+    background: var(--destaque-escuro);
+}
+
+.sucesso {
+    min-height: 20px;
+    margin: 14px 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--ok);
+}
+
+.cadastro {
+    margin: 24px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--borda);
+    text-align: center;
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 28px 20px;
+    }
+}
