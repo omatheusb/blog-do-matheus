@@ -1,3 +1,11 @@
+/*
+Descricao: Página Login
+nome_exercicio: AulaHTML12
+nome_aluno: Matheus Henrique Batista Raimundo
+email_aluno: matheus.raimundo3@aluno.cps.sp.gov.br
+turma: WEBI-ISW028-A
+*/
+
 const formulario = document.getElementById("formLogin");
 const campoEmail = document.getElementById("email");
 const campoSenha = document.getElementById("senha");
